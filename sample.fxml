@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+
+<Pane fx:id="panepane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="431.0" prefWidth="707.0" style="-fx-background-color: #55556F;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mycontroller">
+    <minWidth>-Infinity</minWidth>
+    <children>
+        <Line endX="50.0" endY="280.0" fill="#c622a2" layoutX="175.0" layoutY="60.0" rotate="148.0" startX="50.0" startY="50.0">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis>
+        </Line>
+        <Line endX="100.0" endY="280.0" layoutX="240.0" layoutY="60.0" startX="100.0" startY="50.0" />
+        <Line endX="355.0" layoutX="88.0" layoutY="265.0" startX="40.0" />
+        <Line endX="355.0" layoutX="88.0" layoutY="180.0" startX="40.0" />
+      <GridPane fx:id="gamegrid" layoutX="117.0" layoutY="98.0" prefHeight="249.0" prefWidth="337.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="109.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="114.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="115.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="105.0" minHeight="0.0" prefHeight="84.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="b1" mnemonicParsing="false" opacity="0.0" prefHeight="82.0" prefWidth="181.0" textOverrun="CLIP" />
+            <Button fx:id="b2" mnemonicParsing="false" opacity="0.0" prefHeight="82.0" prefWidth="200.0" GridPane.columnIndex="1" />
+            <Button fx:id="b3" mnemonicParsing="false" opacity="0.0" prefHeight="82.0" prefWidth="227.0" GridPane.columnIndex="2" />
+            <Button fx:id="b4" mnemonicParsing="false" opacity="0.0" prefHeight="84.0" prefWidth="241.0" GridPane.rowIndex="1" />
+            <Button fx:id="b5" mnemonicParsing="false" opacity="0.0" prefHeight="84.0" prefWidth="280.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="b6" mnemonicParsing="false" opacity="0.0" prefHeight="84.0" prefWidth="233.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="b7" mnemonicParsing="false" opacity="0.0" prefHeight="83.0" prefWidth="244.0" GridPane.rowIndex="2" />
+            <Button fx:id="b8" mnemonicParsing="false" opacity="0.0" prefHeight="83.0" prefWidth="226.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="b9" mnemonicParsing="false" opacity="0.0" prefHeight="83.0" prefWidth="165.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <TextField fx:id="name1" layoutX="532.0" layoutY="47.0" promptText="Player one name" />
+      <TextField fx:id="name2" layoutX="532.0" layoutY="167.0" promptText="Player two name" />
+      <ChoiceBox fx:id="choice2" layoutX="531.0" layoutY="203.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="choice1" layoutX="532.0" layoutY="86.0" prefWidth="150.0" />
+      <Button fx:id="resetgamebutton" layoutX="536.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Reset Game" />
+    </children>
+</Pane>
